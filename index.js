@@ -10,12 +10,7 @@ databaseConnection();
 
 app.use(
   cors({
-    // Allow requests from specified frontend origin
-    origin: [process.env.FRONTEND_URI],
-    // Allow specified HTTP methods
     methods: ["GET", "POST", "PUT", "DELETE"],
-    // Allow credentials to be included in requests
-    credentials: true,
   })
 );
 
